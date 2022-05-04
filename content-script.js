@@ -8,3 +8,6 @@ replaceValue = "c=a(8139);c.sendReactionsEnabled=function(){return true;};var ";
 const injectedFuncString = func12285.toString().replace(searchValue, replaceValue);
 // Using eval here is safe, because we are accessing a local variable
 const injectedFunc = eval(injectedFuncString);
+
+//Replace the old function with the injected function
+self.webpackChunkwhatsappweb_client[8][1][12285] = injectedFunc;
