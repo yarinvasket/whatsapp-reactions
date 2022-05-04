@@ -2,5 +2,21 @@
   "name": "Whatsapp reactions",
   "description": "Enable the WhatsApp send reactions feature!",
   "version": "1.0",
-  "manifest_version": 3
+  "manifest_version": 3,
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "content_scripts": [{
+    "js": ["content-script.js"],
+    "all_frams": true,
+    "matches": ["*://web.whatsapp.com/*"],
+    "run_at": "document_start"
+  }],
+
+  "permissions": [
+    "storage",
+    "*://web.whatsapp.com/*"
+  ]
 }
