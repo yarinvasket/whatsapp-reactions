@@ -11,8 +11,15 @@
     "run_at": "document_end"
   }],
 
+  "web_accessible_resources": [{
+    "resources": ["inject.js"],
+    "matches": ["<all_urls>"]
+  }],  
+
   "permissions": [
-    "webRequest"
+    "scripting",
+    "tabs",
+    "webNavigation"
   ],
 
   "host_permissions": [
