@@ -1,14 +1,14 @@
 let inter = setInterval(function() {
-    let idx;
-    if (!(idx = find12285())) {
-            console.log('sad');
+    let idx = find12285();
+    console.log(idx);
+    if (!idx) {
             return;
     }
 
     alert('success');
     clearInterval(inter);
     // The function to be replaced
-    const func12285 = self.webpackChunkwhatsappweb_client[idx][1][12285];
+    const func12285 = self.webpackChunkwhatsapp_web_client[idx][1][12285];
   
     const searchValue = "c=a(8139),",
     replaceValue = "c=a(8139);c.sendReactionsEnabled=function(){return true;};var ";
@@ -19,14 +19,14 @@ let inter = setInterval(function() {
     const injectedFunc = eval(injectedFuncString);
   
     // Replace the old function with the injected function
-    self.webpackChunkwhatsappweb_client[idx][1][12285] = injectedFunc;
+    self.webpackChunkwhatsapp_web_client[idx][1][12285] = injectedFunc;
 }, 0);
 
 function find12285() {
-    if (!self.webpackChunkwhatsappweb_client) return false;
+    if (!self.webpackChunkwhatsapp_web_client) return false;
 
     for (let i = 0; i < 15; i++) {
-        if (self.webpackChunkwhatsappweb_client[i][1][12285]) return i;
+        if (self.webpackChunkwhatsapp_web_client[i][1][12285]) return i;
     }
 
     return false;
