@@ -6,14 +6,13 @@
 
   "content_scripts": [{
     "matches": ["*://web.whatsapp.com/*"],
-    "run_at": "document_end",
     "all_frames": true,
-    "js": ["content-script.js"]
+    "js": ["content-script.js"],
+    "run_at": "document_end"
   }],
 
   "permissions": [
-    "storage",
-    "activeTab"
+    "webRequest"
   ],
 
   "host_permissions": [
