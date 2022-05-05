@@ -4,19 +4,16 @@
   "version": "1.0",
   "manifest_version": 3,
 
-  "background": {
-    "service_worker": "background.js"
-  },
-
   "content_scripts": [{
-    "js": ["content-script.js"],
-    "all_frams": true,
     "matches": ["*://web.whatsapp.com/*"],
-    "run_at": "document_start"
+    "run_at": "document_end",
+    "all_frames": true,
+    "js": ["content-script.js"]
   }],
 
   "permissions": [
-    "storage"
+    "storage",
+    "activeTab"
   ],
 
   "host_permissions": [
