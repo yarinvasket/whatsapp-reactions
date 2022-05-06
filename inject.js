@@ -25,7 +25,8 @@ function find12285() {
     if (!self.webpackChunkwhatsapp_web_client) return false;
 
     for (let i = 0; i < 15; i++) {
-        if (self.webpackChunkwhatsapp_web_client[i][1][12285]) return i;
+        if (self.webpackChunkwhatsapp_web_client[i] &&
+            self.webpackChunkwhatsapp_web_client[i][1][12285]) return i;
     }
 
     return false;
