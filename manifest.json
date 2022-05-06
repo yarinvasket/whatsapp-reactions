@@ -17,15 +17,5 @@
   "web_accessible_resources": [{
     "resources": ["bootstrap_main.c195b67ded28e8965831.js"],
     "matches": ["<all_urls>"]
-  }],  
-
-  "permissions": [
-    "scripting",
-    "tabs",
-    "webNavigation"
-  ],
-
-  "host_permissions": [
-    "*://web.whatsapp.com/*"
-  ]
+  }]
 }
