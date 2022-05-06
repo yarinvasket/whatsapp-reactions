@@ -2,6 +2,9 @@
   "name": "Whatsapp reactions",
   "description": "Enable the WhatsApp send reactions feature!",
   "version": "1.0",
+  "icons": {
+    "64": "icon.png"
+  },
   "manifest_version": 3,
 
   "content_scripts": [{
