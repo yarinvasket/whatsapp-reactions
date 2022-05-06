@@ -12,7 +12,7 @@
   }],
 
   "web_accessible_resources": [{
-    "resources": ["inject.js"],
+    "resources": ["bootstrap_main.c195b67ded28e8965831.js"],
     "matches": ["<all_urls>"]
   }],  
 
