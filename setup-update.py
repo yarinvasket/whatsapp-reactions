@@ -10,10 +10,8 @@ def replaceFileBin(file : str, searchValue : bytes, replaceValue : bytes):
     f.write(content)
     f.close()
 
-if platform == 'linux' or platform == 'linux2' or platform == 'macos':
-    file = 'bootstrap_main.c195b67ded28e8965831.js'
-else:
-    file = 'bootstrap_main.ab8798a02018acb3b512.js'
+# File changes with each update... idk how to get the new file name every time
+file = 'bootstrap_main.ab8798a02018acb3b512.js'
 
 whatsapp_web = requests.get('https://web.whatsapp.com/' + file).content
 f = open(file, 'wb')

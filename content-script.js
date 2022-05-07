@@ -13,8 +13,4 @@ function loadScript(url, callback) {
 
 // call the function...
 loadScript(chrome.runtime.getURL('[FILE]'), function(script) {
-    /*const searchValue = "c=a(8139),";
-    const replaceValue = "c=a(8139);c.sendReactionsEnabled=function(){return true;};var "
-
-    script.innerHTML = script.innerHTML.replace(searchValue, replaceValue);*/
 });
