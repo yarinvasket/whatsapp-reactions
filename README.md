@@ -3,4 +3,6 @@
 Chrome extension to add reactions to Whatsapp Web!
 
 ## Get started
-run `setup-update.py` to generate the javascript file and then you're ready to go!
+Run `setup-update.py` to generate the javascript file.
+
+Then, to install the extension, visit [https://developer.chrome.com/docs/extensions/mv3/getstarted/#unpacked](Chrome docs) for instructions.
